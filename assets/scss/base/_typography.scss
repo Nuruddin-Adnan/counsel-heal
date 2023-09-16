@@ -1,0 +1,9 @@
+@use "../abstracts/variables";
+
+body {
+  font-family: "Rufina", serif;
+  color: variables.$color-text-primary;
+}
+
+// font-family: 'Inter', sans-serif;
+// font-family: 'Rufina', serif;

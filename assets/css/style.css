@@ -1,0 +1,166 @@
+/*=== abstracts css start === */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rufina:wght@400;700&display=swap");
+/*===// end of abstracts css === */
+/*=== base css start === */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+::after, ::before {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Rufina", serif;
+  color: #333;
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+/*===// end of base css === */
+/*=== components css start === */
+.section-heading .section-title, .section-heading .line {
+  font-family: "Inter", sans-serif;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.section-heading .line {
+  color: #12969f;
+  font-size: 80%;
+}
+
+.pagination .page-link {
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #606060;
+}
+
+.advertisement .title {
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  color: #848484;
+}
+
+.blog-card .media {
+  position: relative;
+}
+.blog-card .media::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s linear;
+}
+.blog-card .category {
+  font-family: "Inter", sans-serif;
+  color: #12969f;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.blog-card .title {
+  color: #333;
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+}
+.blog-card .author {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  color: #848484;
+  font-weight: 500;
+}
+.blog-card:hover .media::before {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.spotlight-card .text-content {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent);
+  display: grid;
+  place-content: end;
+}
+.spotlight-card .category {
+  font-family: "Inter", sans-serif;
+  color: #17c1cd;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.spotlight-card .title {
+  color: #fff;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+/*===// end of components css === */
+/*=== layout css start === */
+.top-navigation .navbar-brand {
+  max-width: 150px;
+}
+@media (min-width: 768px) {
+  .top-navigation .navbar-brand {
+    max-width: 300px;
+  }
+}
+@media (min-width: 1400px) {
+  .top-navigation .navbar-brand {
+    max-width: 350px;
+    padding: 10px 0;
+  }
+}
+.top-navigation .nav-link, .top-navigation .bottom-navigation .line, .bottom-navigation .top-navigation .line {
+  color: #333;
+}
+.top-navigation .nav-link:hover, .top-navigation .bottom-navigation .line:hover, .bottom-navigation .top-navigation .line:hover {
+  color: #12969f;
+}
+
+.bottom-navigation {
+  overflow-x: auto;
+}
+.bottom-navigation .nav-link, .bottom-navigation .line {
+  font-family: "Inter", sans-serif;
+  color: #000;
+  padding: 0.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+@media (max-width: 1399px) {
+  .bottom-navigation .nav-link, .bottom-navigation .line {
+    font-size: 14px;
+  }
+}
+.bottom-navigation .nav-link.active, .bottom-navigation .active.line, .bottom-navigation .nav-link:hover, .bottom-navigation .line:hover {
+  color: #12969f;
+}
+.bottom-navigation .line {
+  font-weight: 700;
+  color: #12969f;
+}
+
+/*===// end of layout css === */
+/*=== pages start === */
+/*===// end of pages  === */

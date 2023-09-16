@@ -1,0 +1,48 @@
+@use "../abstracts/variables";
+
+.top-navigation {
+  .navbar-brand {
+    max-width: 150px;
+    @media (min-width: 768px) {
+      max-width: 300px;
+    }
+    @media (min-width: 1400px) {
+      max-width: 350px;
+      padding: 10px 0;
+    }
+  }
+
+  .nav-link {
+    color: variables.$color-text-primary;
+
+    &:hover {
+      color: variables.$color-primary;
+    }
+  }
+}
+
+.bottom-navigation {
+  overflow-x: auto;
+  .nav-link {
+    font-family: "Inter", sans-serif;
+    color: #000;
+    padding: 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+    @media (max-width: 1399px) {
+      font-size: 14px;
+    }
+
+    &.active,
+    &:hover {
+      color: variables.$color-primary;
+    }
+  }
+
+  .line {
+    @extend .nav-link;
+    font-weight: 700;
+    color: variables.$color-primary;
+  }
+}

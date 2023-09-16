@@ -1,0 +1,22 @@
+@use "../abstracts/variables";
+
+.spotlight-card {
+  .text-content {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent);
+    display: grid;
+    place-content: end;
+  }
+
+  .category {
+    font-family: "Inter", sans-serif;
+    color: lighten(variables.$color-primary, 10);
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  .title {
+    color: #fff;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+}

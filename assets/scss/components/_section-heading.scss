@@ -1,0 +1,16 @@
+@use "../abstracts/variables";
+
+.section-heading {
+  .section-title {
+    font-family: "Inter", sans-serif;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .line {
+    @extend .section-title;
+    color: variables.$color-primary;
+    font-size: 80%;
+  }
+}
