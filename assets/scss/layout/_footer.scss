@@ -1,0 +1,34 @@
+.footer {
+  .navbar-brand {
+    max-width: 150px;
+    @media (min-width: 768px) {
+      max-width: 250px;
+    }
+    @media (min-width: 1400px) {
+      max-width: 280px;
+    }
+  }
+
+  .social-link {
+    .nav-link {
+      color: #777777;
+      padding: 0.5rem;
+    }
+  }
+
+  .copyright {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #555;
+  }
+
+  .footer-nav {
+    .nav-link {
+      @extend .copyright;
+      display: inline-block;
+      text-decoration: underline;
+      padding: 0.5rem;
+    }
+  }
+}

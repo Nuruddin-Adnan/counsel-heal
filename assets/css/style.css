@@ -161,6 +161,35 @@ body {
   color: #12969f;
 }
 
+.footer .navbar-brand {
+  max-width: 150px;
+}
+@media (min-width: 768px) {
+  .footer .navbar-brand {
+    max-width: 250px;
+  }
+}
+@media (min-width: 1400px) {
+  .footer .navbar-brand {
+    max-width: 280px;
+  }
+}
+.footer .social-link .nav-link {
+  color: #777777;
+  padding: 0.5rem;
+}
+.footer .copyright, .footer .footer-nav .nav-link {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #555;
+}
+.footer .footer-nav .nav-link {
+  display: inline-block;
+  text-decoration: underline;
+  padding: 0.5rem;
+}
+
 /*===// end of layout css === */
 /*=== pages start === */
 /*===// end of pages  === */
