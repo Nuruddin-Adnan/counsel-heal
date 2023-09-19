@@ -256,6 +256,11 @@ body {
 .article-details .description-details .description {
   color: #333;
 }
+@media (min-width: 1400px) {
+  .article-details .description-details .description {
+    font-size: 18px;
+  }
+}
 .article-details .description-details .copyright {
   color: #333;
   font-size: 14px;

@@ -30,6 +30,10 @@
   .description-details {
     .description {
       color: variables.$color-text-primary;
+
+      @media (min-width: 1400px) {
+        font-size: 18px;
+      }
     }
 
     .copyright {
