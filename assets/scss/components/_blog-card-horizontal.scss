@@ -1,0 +1,32 @@
+@use "../abstracts/variables";
+
+.blog-card-horizontal {
+  .category {
+    font-family: "Inter", sans-serif;
+    color: variables.$color-primary;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  .title {
+    color: variables.$color-text-primary;
+    font-weight: 700;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    @media (min-width: 1200px) {
+      -webkit-line-clamp: 3;
+    }
+    @media (min-width: 1400px) {
+      font-size: 17px;
+      -webkit-line-clamp: 4;
+    }
+  }
+  .author {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    color: variables.$color-text-secondary;
+    font-weight: 500;
+  }
+}

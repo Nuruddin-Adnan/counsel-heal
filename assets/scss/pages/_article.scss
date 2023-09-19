@@ -1,0 +1,40 @@
+@use "../abstracts/variables";
+
+.article-details {
+  .category {
+    font-family: "Inter", sans-serif;
+    color: variables.$color-primary;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  .title {
+    color: variables.$color-text-primary;
+    font-weight: 700;
+    margin: 10px 0 15px 0;
+  }
+  .short-description {
+    color: variables.$color-text-primary;
+  }
+  .author {
+    font-family: "Inter", sans-serif;
+    color: variables.$color-text-secondary;
+    font-weight: 500;
+  }
+
+  .img-caption {
+    color: variables.$color-text-primary;
+    font-size: 14px;
+  }
+
+  .description-details {
+    .description {
+      color: variables.$color-text-primary;
+    }
+
+    .copyright {
+      color: variables.$color-text-primary;
+      font-size: 14px;
+    }
+  }
+}
