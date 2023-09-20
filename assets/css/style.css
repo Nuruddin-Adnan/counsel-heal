@@ -1,5 +1,5 @@
 /*=== abstracts css start === */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rufina:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Inter:wght@400;500;600;700&family=Rufina:wght@400;700&display=swap");
 /*===// end of abstracts css === */
 /*=== base css start === */
 * {
@@ -277,10 +277,30 @@ body {
   }
 }
 .home .blog-category-wise .blog-category-title {
+  font-family: "Fugaz One", cursive;
   font-weight: 700;
   color: #000;
+  text-transform: uppercase;
   font-style: italic;
   text-align: center;
+}
+.home .condition-table td,
+.home .condition-table th {
+  background-color: transparent;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #333;
+  font-size: 18px;
+  padding: 1.5rem 0.5rem;
+}
+@media (min-width: 1400px) {
+  .home .condition-table td,
+  .home .condition-table th {
+    font-size: 21px;
+  }
+}
+.home .condition-table th {
+  color: #12969f;
 }
 
 .article-details .category {
@@ -320,4 +340,4 @@ body {
   font-size: 14px;
 }
 
-/*===// end of pages  === *//*# sourceMappingURL=style.css.map */
+/*===// end of pages  === */

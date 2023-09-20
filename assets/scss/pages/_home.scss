@@ -32,10 +32,32 @@
 
   .blog-category-wise {
     .blog-category-title {
+      font-family: "Fugaz One", cursive;
       font-weight: 700;
       color: #000;
+      text-transform: uppercase;
       font-style: italic;
       text-align: center;
+    }
+  }
+
+  .condition-table {
+    td,
+    th {
+      background-color: transparent;
+      font-family: "Inter", sans-serif;
+      font-weight: 500;
+      color: #333;
+      font-size: 18px;
+      padding: 1.5rem 0.5rem;
+
+      @media (min-width: 1400px) {
+        font-size: 21px;
+      }
+    }
+
+    th {
+      color: #12969f;
     }
   }
 }
