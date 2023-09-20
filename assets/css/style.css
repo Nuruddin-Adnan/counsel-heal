@@ -35,8 +35,12 @@ body {
   padding: 80px 0;
 }
 
-.text-global-primary {
+.color-brand {
   color: #12969f;
+}
+
+.text-global-primary {
+  color: #333;
 }
 
 /*===// end of base css === */
@@ -89,6 +93,13 @@ body {
   color: #333;
   font-weight: 700;
   margin: 10px 0 15px 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+}
+.blog-card .title.line-clump-4 {
+  -webkit-line-clamp: 4;
 }
 .blog-card .author {
   font-family: "Inter", sans-serif;
@@ -149,6 +160,12 @@ body {
   color: #fff;
   font-weight: 700;
   margin-top: 10px;
+}
+.spotlight-card .author {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
 }
 
 /*===// end of components css === */
@@ -229,6 +246,43 @@ body {
 
 /*===// end of layout css === */
 /*=== pages start === */
+@media (max-width: 991px) {
+  .home .blog-card-horizontal .title {
+    -webkit-line-clamp: 2;
+  }
+}
+@media (min-width: 1200px) {
+  .home .blog-card-horizontal .title {
+    font-size: 19px;
+  }
+}
+@media (min-width: 1400px) {
+  .home .blog-card-horizontal .title {
+    font-size: 22px;
+    -webkit-line-clamp: 3;
+  }
+}
+.home .editors-pick {
+  background: #eff9fa;
+}
+@media (min-width: 1200px) {
+  .home .editors-pick .blog-card-horizontal .title {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1400px) {
+  .home .editors-pick .blog-card-horizontal .title {
+    font-size: 16px;
+    -webkit-line-clamp: 3;
+  }
+}
+.home .blog-category-wise .blog-category-title {
+  font-weight: 700;
+  color: #000;
+  font-style: italic;
+  text-align: center;
+}
+
 .article-details .category {
   font-family: "Inter", sans-serif;
   color: #12969f;
@@ -266,4 +320,4 @@ body {
   font-size: 14px;
 }
 
-/*===// end of pages  === */
+/*===// end of pages  === *//*# sourceMappingURL=style.css.map */

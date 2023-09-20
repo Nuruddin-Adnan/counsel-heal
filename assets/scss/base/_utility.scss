@@ -4,6 +4,10 @@
   padding: 80px 0;
 }
 
-.text-global-primary {
+.color-brand {
   color: variables.$color-primary;
+}
+
+.text-global-primary {
+  color: variables.$color-text-primary;
 }
