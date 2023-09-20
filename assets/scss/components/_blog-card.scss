@@ -24,6 +24,14 @@
     color: variables.$color-text-primary;
     font-weight: 700;
     margin: 10px 0 15px 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+
+    &.line-clump-4 {
+      -webkit-line-clamp: 4;
+    }
   }
   .author {
     font-family: "Inter", sans-serif;
