@@ -42,6 +42,14 @@
   }
 
   .condition-table {
+    .table-responsive {
+      // scroll bar design
+      /* width */
+      &::-webkit-scrollbar {
+        height: 5px;
+        width: 5px;
+      }
+    }
     td,
     th {
       background-color: transparent;
