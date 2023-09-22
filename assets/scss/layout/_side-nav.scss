@@ -1,0 +1,39 @@
+.side-nav {
+  .navbar-brand {
+    max-width: 200px;
+  }
+
+  .main-nav {
+    .nav-link {
+      font-family: "Inter", sans-serif;
+      color: #000;
+      padding: 0.5rem 0;
+      font-weight: 600;
+      text-transform: uppercase;
+      white-space: nowrap;
+      @media (max-width: 1399px) {
+        font-size: 14px;
+      }
+
+      &.active,
+      &:hover {
+        color: #12969f;
+      }
+    }
+  }
+
+  .social-link {
+    .nav-link {
+      color: #777777;
+      padding: 0 0.5rem;
+    }
+  }
+
+  .copyright {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    color: #555;
+  }
+}

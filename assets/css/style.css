@@ -59,6 +59,20 @@ body {
 
 /*===// end of base css === */
 /*=== components css start === */
+.search-modal {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #555;
+}
+.search-modal .search-btn {
+  background-color: #12969f;
+  color: #fff;
+}
+.search-modal .search-btn:hover {
+  background-color: #0f8088;
+}
+
 .section-heading .section-title, .section-heading .line {
   font-family: "Inter", sans-serif;
   color: #000;
@@ -232,6 +246,37 @@ body {
 .bottom-navigation .line {
   font-weight: 700;
   color: #12969f;
+}
+
+.side-nav .navbar-brand {
+  max-width: 200px;
+}
+.side-nav .main-nav .nav-link {
+  font-family: "Inter", sans-serif;
+  color: #000;
+  padding: 0.5rem 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+@media (max-width: 1399px) {
+  .side-nav .main-nav .nav-link {
+    font-size: 14px;
+  }
+}
+.side-nav .main-nav .nav-link.active, .side-nav .main-nav .nav-link:hover {
+  color: #12969f;
+}
+.side-nav .social-link .nav-link {
+  color: #777777;
+  padding: 0 0.5rem;
+}
+.side-nav .copyright {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #555;
 }
 
 .footer .navbar-brand {
