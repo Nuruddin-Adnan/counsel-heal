@@ -38,9 +38,14 @@
     font-weight: 600;
     text-transform: uppercase;
     white-space: nowrap;
+    @media (max-width: 991px) {
+      padding-bottom: 0px;
+    }
     @media (max-width: 1399px) {
       font-size: 14px;
     }
+
+
 
     &.active,
     &:hover {

@@ -235,6 +235,11 @@ body {
   text-transform: uppercase;
   white-space: nowrap;
 }
+@media (max-width: 991px) {
+  .bottom-navigation .nav-link, .bottom-navigation .line {
+    padding-bottom: 0px;
+  }
+}
 @media (max-width: 1399px) {
   .bottom-navigation .nav-link, .bottom-navigation .line {
     font-size: 14px;
